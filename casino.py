@@ -8,6 +8,7 @@ arret = "n"
 print("Bienvenu au CASINO !\nVotre porte-monnaie est composé de " + str(wallet) + "euros")
 
 while just_number in range(0, 50) and arret == "n":
+    just_number = randrange(0, 50)
     number = int(input("Quel numéro choisissez-vous entre 0 et 49 ? "))
     if number not in range(0, 50):
         print("choisi entre 0 et 49 !")
