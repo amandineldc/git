@@ -19,9 +19,9 @@ while just_number in range(0, 50) and arret == "n":
              wallet = wallet + mise + mise*3
              print("Bravo vous avez trouvé le bon numéro, vous avez gagné " + str(mise*3) + "votre porte-monnaie est de " + str(wallet))
              arret = input(print("voulez vous arrêter o/n ? "))
-        elif (just_number % 2) and (number % 2):
+        elif (just_number % 2 == 0) and (number % 2 == 0):
              wallet = math.ceil(wallet + mise + mise/2)
-             print("Votre numéro est de la même couleur que le numéro gagnant. Vous avez gagné " + str(mise/2) + "votre porte-monnaie est de " + str(wallet))
+             print("Votre numéro est de la même couleur que le numéro gagnant. Vous avez gagné " + str(mise/2) + " Votre porte-monnaie est de " + str(wallet))
              arret = input(print("voulez vous arrêter o/n ? "))
         else:
              print(("Vous avez perdu votre mise. Votre porte-monnaie est de " + str(wallet)))
